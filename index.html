@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Years of Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Login Section -->
+    <div id="login-section" class="section active">
+        <div class="login-container">
+            <h1>Welcome to Our 5 Year Anniversary!</h1>
+            <p>To continue, please enter the password:</p>
+            <div class="password-hint">Hint: What I call your eye color</div>
+            <input type="text" id="password-input" placeholder="Enter password">
+            <button id="password-submit">Enter</button>
+            <div id="password-error" class="error-message"></div>
+            <div class="password-progress">
+                <div class="password-step active"></div>
+                <div class="password-step"></div>
+                <div class="password-step"></div>
+                <div class="password-step"></div>
+                <div class="password-step"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Typewriter Introduction -->
+    <div id="typewriter-section" class="section">
+        <div class="typewriter-container">
+            <div id="typewriter-text"></div>
+            <div class="scroll-down-prompt">
+                <p>Scroll down to see our journey</p>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content Section -->
+    <div id="main-content" class="section">
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <h1>Happy 5 Year Anniversary, Kristen!</h1>
+                <p class="subtitle">5 amazing years with my favorite person</p>
+            </div>
+        </header>
+
+        <!-- Polaroid Gallery -->
+        <section id="polaroid-gallery">
+            <div class="polaroid-container">
+                <div class="polaroid active">
+                    <div class="polaroid-image" id="polaroid1"></div>
+                    <p class="polaroid-caption">You and I (in loveee)</p>
+                </div>
+                <div class="polaroid">
+                    <div class="polaroid-image" id="polaroid2"></div>
+                    <p class="polaroid-caption">Remember this day? 😊</p>
+                </div>
+                <div class="polaroid">
+                    <div class="polaroid-image" id="polaroid3"></div>
+                    <p class="polaroid-caption">My favorite smile</p>
+                </div>
+                <div class="polaroid">
+                    <div class="polaroid-image" id="polaroid4"></div>
+                    <p class="polaroid-caption">Adventure time!</p>
+                </div>
+                <div class="polaroid">
+                    <div class="polaroid-image" id="polaroid5"></div>
+                    <p class="polaroid-caption">5 years of happiness</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Text Message Section -->
+        <section id="text-message">
+            <div class="message-container">
+                <div class="message-header">
+                    <h3>Messages With Kristen</h3>
+                </div>
+                <div class="message-body">
+                    <div class="message-bubble sent">
+                        <p>Hey bug ❤️</p>
+                        <span class="time">Now</span>
+                    </div>
+                    <div class="message-bubble sent">
+                        <p>Can you believe it's been 5 years?</p>
+                        <span class="time">Now</span>
+                    </div>
+                    <div class="message-bubble sent">
+                        <p>These have been the best 5 years of my life, and I'm so grateful for every moment with you.</p>
+                        <span class="time">Now</span>
+                    </div>
+                    <div class="message-bubble received">
+                        <p>Aww</p>
+                        <span class="time">Now</span>
+                    </div>
+                    <div class="message-bubble sent">
+                        <p>I look back on the time we spent together and cant help but smile</p>
+                        <span class="time">Now</span>
+                    </div>
+                    <div class="message-bubble received">
+                        <p>Me too bug!</p>
+                        <span class="time">Now</span>
+                    </div>
+                    <div class="message-bubble sent">
+                        <p>You've made my life so much better than i could imagine ❤️</p>
+                        <span class="time">Now</span>
+                    </div>
+                    <div class="message-bubble sent">
+                        <p>And now look at us, 5 years later and I still get butterflies when I see you</p>
+                        <span class="time">Now</span>
+                    </div>
+                    <div class="message-bubble received">
+                        <p>Can you hurry up and get out of the bathroom!</p>
+                        <span class="time">Now</span>
+                    </div>
+                    <div class="message-bubble sent">
+                        <p>LOL coming! But first, scroll down to see a few reasons why I love you so damn much!</p>
+                        <span class="time">Now</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section id="photo-gallery-section" class="content-section">
+            <h2>Our Journey Together</h2>
+            <div class="photo-container" id="photo-gallery">
+                <!-- Images will be dynamically added here from the Collage folder -->
+            </div>
+            <div class="gallery-controls">
+                <button class="gallery-control" id="scroll-left"><i class="fas fa-chevron-left"></i></button>
+                <button class="gallery-control" id="scroll-right"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Things I Love About You Section -->
+        <section id="things-love" class="content-section">
+            <h2>Things I Love About You</h2>
+            <div class="love-grid">
+                <div class="love-item">
+                    <div class="love-front">
+                        <i class="fas fa-heart"></i>
+                        <p>Your laugh that never ceases to make me cheer up</p>
+                    </div>
+                    <div class="love-back">
+                        <div class="love-image" id="love-image-1"></div>
+                    </div>
+                </div>
+                <div class="love-item">
+                    <div class="love-front">
+                        <i class="fas fa-heart"></i>
+                        <p>Your beautiful soup-colored eyes that I get lost in</p>
+                    </div>
+                    <div class="love-back">
+                        <div class="love-image" id="love-image-2"></div>
+                    </div>
+                </div>
+                <div class="love-item">
+                    <div class="love-front">
+                        <i class="fas fa-heart"></i>
+                        <p>How caring and supportive you are with everyone you love</p>
+                    </div>
+                    <div class="love-back">
+                        <div class="love-image" id="love-image-3"></div>
+                    </div>
+                </div>
+                <div class="love-item">
+                    <div class="love-front">
+                        <i class="fas fa-heart"></i>
+                        <p>Your determination and passion for the things you care about</p>
+                    </div>
+                    <div class="love-back">
+                        <div class="love-image" id="love-image-4"></div>
+                    </div>
+                </div>
+                <div class="love-item">
+                    <div class="love-front">
+                        <i class="fas fa-heart"></i>
+                        <p>The way you make even the mundane things fun</p>
+                    </div>
+                    <div class="love-back">
+                        <div class="love-image" id="love-image-5"></div>
+                    </div>
+                </div>
+                <div class="love-item">
+                    <div class="love-front">
+                        <i class="fas fa-heart"></i>
+                        <p>How adorable you are when you're sleepy</p>
+                    </div>
+                    <div class="love-back">
+                        <div class="love-image" id="love-image-6"></div>
+                    </div>
+                </div>
+                <div class="love-item">
+                    <div class="love-front">
+                        <i class="fas fa-heart"></i>
+                        <p>Your kindness</p>
+                    </div>
+                    <div class="love-back">
+                        <div class="love-image" id="love-image-7"></div>
+                    </div>
+                </div>
+                <div class="love-item">
+                    <div class="love-front">
+                        <i class="fas fa-heart"></i>
+                        <p>The way you make me feel like the luckiest person alive</p>
+                    </div>
+                    <div class="love-back">
+                        <div class="love-image" id="love-image-8"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Things You Do To Make My Life Better -->
+        <section id="life-better" class="content-section">
+            <h2>Things You Do That Make My Life Better</h2>
+            <div class="life-better-container">
+                <div class="life-item">
+                    <i class="fas fa-star"></i>
+                    <h3>You're my best friend</h3>
+                    <p>I can talk to you about anything and everything. You understand me better than anyone else, and I really dont know what I would do without you</p>
+                </div>
+                <div class="life-item">
+                    <i class="fas fa-star"></i>
+                    <h3>You push me to be better</h3>
+                    <p>You support my goals and encourage me when I need motivation.</p>
+                </div>
+                <div class="life-item">
+                    <i class="fas fa-star"></i>
+                    <h3>You make me laugh</h3>
+                    <p>Even on bad days, you still make an effort to cheer me up (even when im being a bit of a grump).</p>
+                </div>
+                <div class="life-item">
+                    <i class="fas fa-star"></i>
+                    <h3>You're the place that feels like home</h3>
+                    <p>With you, I feel like a better version of myself, more confident, and happier.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Plans -->
+        <section id="future-plans" class="content-section">
+            <h2>Things I Can't Wait To Do With You</h2>
+            <div class="future-container">
+                <div class="future-item">
+                    <i class="fas fa-plane"></i>
+                    <h3>Travel</h3>
+                    <p>Seeing new places with you by my side.</p>
+                </div>
+                <div class="future-item">
+                    <i class="fas fa-home"></i>
+                    <h3>Living together</h3>
+                    <p>Creating a cozy space that's perfectly us.</p>
+                </div>
+                <div class="future-item">
+                    <i class="fas fa-hiking"></i>
+                    <h3>Try new things</h3>
+                    <p>Climbing, camping, dancing and anything else we can do together.</p>
+                </div>
+                <div class="future-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Do boring things</h3>
+                    <p>Trying new recipes and having dinner at home.</p>
+                </div>
+                <div class="future-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>Love on you</h3>
+                    <p>You wont find a way to keep me away from you, i want to be closer than close and thats never going to change</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Milestones -->
+        <section id="milestones" class="content-section">
+            <h2>Our Future Milestones</h2>
+            <div class="timeline">
+                <div class="milestone">
+                    <div class="milestone-date">2026</div>
+                    <div class="milestone-content">
+                        <h3>Our 6th Anniversary</h3>
+                        <p>Another year of loving you more and more.</p>
+                    </div>
+                </div>
+                <div class="milestone">
+                    <div class="milestone-date">Soon</div>
+                    <div class="milestone-content">
+                        <h3>Engagement</h3>
+                        <p>When I ask you to be mine forever.</p>
+                    </div>
+                </div>
+                <div class="milestone">
+                    <div class="milestone-date">Future</div>
+                    <div class="milestone-content">
+                        <h3>Our Wedding Day</h3>
+                        <p>Celebrating our love with everyone we care about.</p>
+                    </div>
+                </div>
+                <div class="milestone">
+                    <div class="milestone-date">Someday</div>
+                    <div class="milestone-content">
+                        <h3>Our Dream Home</h3>
+                        <p>Where we'll have our own place and make memories together.</p>
+                    </div>
+                </div>
+                <div class="milestone">
+                    <div class="milestone-date">When We're Ready</div>
+                    <div class="milestone-content">
+                        <h3>Starting a Family</h3>
+                        <p>The day our lives change forever in the best way possible.</p>
+                    </div>
+                </div>
+                <div class="milestone">
+                    <div class="milestone-date">Forever</div>
+                    <div class="milestone-content">
+                        <h3>Growing Old Together</h3>
+                        <p>I can't wait to spend my life with you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Surprise Section -->
+        <section id="surprise" class="content-section">
+            <h2>I Have A Surprise For You!</h2>
+            <div class="surprise-container">
+                <button id="reveal-surprise">Click To Reveal Your SECRET Gift</button>
+                <div id="surprise-content" class="hidden">
+                    <div class="confetti-container"></div>
+                    <div class="ticket-container">
+                        <div class="ticket">
+                            <h3>CONCERT TICKETS</h3>
+                            <p class="ticket-detail">We're going to see Warren Zeiders!</p>
+                            <div class="ticket-image"></div>
+                            <p class="ticket-message">I can't wait to make more memories with you, this one will be on Sept. 28th ❤️</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>I love you oodles and oodles, bug! Happy 5 Year Anniversary!</p>
+            <p class="signature">❤️ Forever Yours</p>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
