@@ -1071,7 +1071,7 @@ footer {
     }
     
     .milestone:nth-child(even) {
-        left: 1%;
+        left: 0%;
     }
     
     .milestone::after {
